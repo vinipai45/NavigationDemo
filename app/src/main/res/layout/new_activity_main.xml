@@ -1,0 +1,63 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is the New Activity"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_margin="20dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whats your Gender?"
+        android:textSize="20sp"
+        android:layout_margin="20dp">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="MALE">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Female">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/radioOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Others">
+        </RadioButton>
+
+    </RadioGroup>
+    <Button
+        android:onClick="chooseGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Choosen Gender"
+        android:layout_margin="20dp"
+
+        >
+
+    </Button>
+
+</LinearLayout>
